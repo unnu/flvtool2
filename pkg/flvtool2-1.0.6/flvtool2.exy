@@ -1,0 +1,22 @@
+general:
+  startup: flvtool2.rb
+  core: cui
+  kcode: none
+
+path:
+  - lib
+
+file:
+  flvtool2.rb:
+  flv.rb:
+  flv/amf_string_buffer.rb: 
+  flv/audio_tag.rb: 
+  flv/core_extensions.rb: 
+  flv/meta_tag.rb: 
+  flv/stream.rb: 
+  flv/tag.rb: 
+  flv/video_tag.rb: 
+  flvtool2/base.rb: 
+  flvtool2/version.rb: 
+  mixml.rb: 
+  miyaml.rb: 

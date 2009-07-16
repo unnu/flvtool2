@@ -1,0 +1,27 @@
+= FLVTool2 - Flash video manipulation
+
+== Download
+
+http://www.inlet-media.de/flvtool2
+
+== Installation
+
+Unix/Linux/BSD etc.:
+
+Execute following commands in directory of README file:
+
+ruby setup.rb config
+ruby setup.rb setup
+sudo ruby setup.rb install
+
+Windows:
+No installation needed.
+
+== Bug reports
+
+info@inlet-media.de
+
+== License
+
+See LICENSE file.
+

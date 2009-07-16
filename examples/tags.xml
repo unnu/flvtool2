@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<tags>
+  <!-- an event cue point -->
+  <metatag event="onCuePoint">
+    <name>TestEvent1</name>
+    <timestamp>333</timestamp>
+    <parameters>
+      <speaker>Peter</speaker>
+      <says>Hello my Name is Peter.</says>
+    </parameters>
+    <type>event</type>
+  </metatag>
+
+  <!-- a navigation cue point -->
+  <metatag event="onCuePoint">
+    <name>TestEvent2</name>
+    <timestamp>1000</timestamp>
+    <parameters>
+      <index>1</index>
+      <title>Chapter 1</title>
+    </parameters>
+    <type>navigation</type>
+  </metatag>
+  
+  <!-- this cuepoint overwrites the previuos cue point, because of it's 
+  identical timestamps and the overwrite parameter was set -->
+   
+  <metatag event="onCuePoint" overwrite="true">
+    <name>TestEvent3</name>
+    <timestamp>1000</timestamp>
+    <parameters>
+      <index>1</index>
+      <title>Chapter 2</title>
+    </parameters>
+    <type>navigation</type>
+  </metatag>
+</tags>
+
+
