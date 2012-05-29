@@ -72,7 +72,7 @@ module FLVTool2
           tag.timestamp = ( data['timestamp'] && data['timestamp'].to_i ) || 0
           tag.timestamp = stream.find_nearest_keyframe_video_tag(tag.timestamp).timestamp if options[:keyframe_mode] && data['type'] == 'navigation'
           data.delete( 'timestamp' )
-          data['time'] = tag.timestamp / 1000
+          data['time'] = tag.timestamp * 0.001
           
           tag.meta_data.merge!( data )
   
