@@ -1,12 +1,15 @@
-= FLVTool2 - Flash video manipulation
+FLVTool2 - Flash video manipulation
+==================================
 
 FLVTool2 is a manipulation tool for Macromedia Flash Video files (FLV).
 
-== Overview
+Overview
+--------
 
 FLVTool2 calculates various meta data and inserts a onMetaData tag in the video. It cuts FLV files and adds cue Points (onCuePoint). A debug command shows the inside of a FLV file and the print command gives meta data information in XML or YAML format.
 
-== Features
+Features
+--------
 
 - batch processing
 - directory recursion
@@ -19,7 +22,8 @@ FLVTool2 calculates various meta data and inserts a onMetaData tag in the video.
 - runs on Windows, Linux and Mac OSX
 - ideal for serverside automatic meta data injection
 
-== Installation
+Installation
+------------
 
 Most Linux OS's packet manager have FLVTool2 available.
 
@@ -49,7 +53,8 @@ Download the flvtool2.exe file from here:
 
 https://github.com/unnu/flvtool2/raw/master/flvtool2.exe
 
-== Usage
+Usage
+-----
 
 ```
 $ flvtool2 
@@ -95,7 +100,10 @@ Switches:
   -x            XML mode instead of YAML mode
 ```
 
-== Bug reports
+Bug reports
+-----------
 
-norman.timmler@gmail.com
+Please file an issue in the github issue tracker system:
+
+https://github.com/unnu/flvtool2/issues
 
