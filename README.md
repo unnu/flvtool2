@@ -28,10 +28,10 @@ Installation
 Most Linux OS's packet manager have FLVTool2 available.
 
 ```
-apt-get flvtool2
+apt-get install flvtool2
 ```
 
-Instllation via ruby gems:
+Installation via ruby gems:
 
 ```
 gem install flvtool2
