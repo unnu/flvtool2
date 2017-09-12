@@ -57,6 +57,10 @@ module FLVTool2
   
   
       def add(options, stream, in_path, out_path)
+        if options.class != Hash
+           puts "-A needs Tag file\n"
+           return
+        end
         tag_structures = MiXML.parse( File.open( options[:tag_file], File::RDONLY ) { |file| file.readlines }.join )
   
         add_tag = Proc.new do |data|  

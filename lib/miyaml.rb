@@ -38,7 +38,7 @@ class MiYAML
     yaml = ''
     
     if object.class == Object
-      object = object.instance_variables.inject( {} ) { |hash, var| hash[var.gsub('@', '')] = object.instance_variable_get(var); hash }
+      object = object.instance_variables.inject( {} ) { |hash, var| hash[var.to_s.gsub('@', '')] = object.instance_variable_get(var); hash }
     end
     
     case object

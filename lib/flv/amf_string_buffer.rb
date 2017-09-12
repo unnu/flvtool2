@@ -213,7 +213,7 @@ class AMFStringBuffer
     write__UI8 3
     
     object.instance_variables.each do |variable|
-      write__AMF_key variable.gsub('@', '')
+      write__AMF_key variable.to_s.gsub('@', '')
       write__AMF_data object.instance_variable_get( variable.intern )
     end
     

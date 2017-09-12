@@ -75,7 +75,7 @@ class MiXML
         hash
       end
     else
-      if branch[:cdata] && branch.size == 1
+      if branch.class != String && branch[:cdata] && branch.size == 1
         branch[:cdata]
       else
         branch
